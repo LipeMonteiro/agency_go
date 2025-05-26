@@ -157,6 +157,7 @@ a {
     height: calc(100vh - 100px);
     margin-top: 100px;
     position: relative;
+    border-radius: 0 0 25% 0;
 }
 
 .home__ligh {
@@ -204,6 +205,7 @@ a {
 }
 
 #home__content-txt {
+    margin-top: -4rem;
     width: 50%;
 }
 
@@ -264,11 +266,12 @@ a {
 
 #home__content-img {
     width: 50%;
+    margin-top: -6rem;
     text-align: right;
 }
 
 #home__content-img img {
-    width: 80%;
+    width: 85%;
     position: relative;
 }
 
@@ -276,7 +279,7 @@ a {
             ABOUT
 ===========================*/
 #about {
-    background-color: var(--white);
+    background-color: var(--primary);
 }
 
 #about .container {
@@ -284,29 +287,30 @@ a {
 }
 
 #about__title {
-    text-align: center;
-    font-size: 2rem;
-    color: var(--secondary);
-    margin: 40px 0;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 20px 0;
 }
 
 .section-line {
     width: 6rem;
     height: .25rem;
-    background-color: var(--primary);
+    background-color: var(--white);
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%;
+    transform: translateX(-50%); */
     margin-bottom: 40px;
 }
 
 #about__metrics {
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
+    margin-top: -6rem;
     padding: 2rem;
     border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 40px #e4e4e4;
+    background-color: var(--white);
+    box-shadow: 0 -5px 20px #e4e3e3;
 }
 
 #about__metrics ul {
@@ -325,7 +329,7 @@ a {
 }
 
 .about__metrics-desc {
-    color: var(--secondary);
+    color: var(--gray);
 }
 
 .about__metrics-divider {
