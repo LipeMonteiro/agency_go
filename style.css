@@ -20,7 +20,7 @@ a {
 /* ========= VAR COLORS ========= */
 :root {
     --primary: #f5770a;
-    --secondary: #2f2e41;
+    --secondary: #323141;
     --white: #fff;
     --gray: #b9b8b8;
 }
@@ -62,7 +62,7 @@ a {
     font-weight: 500;
     /* border: 2px solid var(--secondary); */
     background-color: var(--white);
-    box-shadow: 0 0 8px var(--gray);
+    box-shadow: 0 0 20px var(--gray);
 }
 
 .btn-secondary:hover {
@@ -165,6 +165,7 @@ a {
     background: radial-gradient(circle, rgba(245, 120, 10, 0.699) 0%, rgba(241, 164, 101, 0.171) 70%, transparent 100%);
     filter: blur(10px);
     z-index: -1;
+    display: none;
 }
 
 .home__ligh:nth-child(1) {
@@ -274,36 +275,62 @@ a {
 /* ===========================
             ABOUT
 ===========================*/
-#about{
-    
+#about {
+    background-color: var(--white);
 }
-#about__statics{
+
+#about .container {
+    padding: 40px;
+}
+
+#about__title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary);
+    margin: 40px 0;
+}
+
+.section-line {
+    width: 6rem;
+    height: .25rem;
+    background-color: var(--primary);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+}
+
+#about__metrics {
     width: 1000px;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 8px;
     background-color: #fff;
-    box-shadow: 0 0 40px #cacaca;
+    box-shadow: 0 0 40px #e4e4e4;
 }
-#about__statics ul{
+
+#about__metrics ul {
     display: flex;
     justify-content: space-between;
 }
-#about__statics ul li{
+
+#about__metrics ul li {
     text-align: center;
 }
-.about__statics-number{
+
+.about__metrics-number {
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--secondary);
 }
-.about__statics-desc{
-    color: var(--primary);
-    font-weight: 500;
+
+.about__metrics-desc {
+    color: var(--secondary);
 }
-.about__statics-divider{
+
+.about__metrics-divider {
     display: block;
-    width: 2px;
+    width: 1px;
     height: 66px;
-    background-color: var(--gray);
+    background-color: #e9e9e9;
 }
