@@ -27,7 +27,7 @@ a {
 
 /* ========= MODIFIING CLASSES ======== */
 .container {
-    max-width: 1280px;
+    max-width: 1200px;
     padding: 0 40px;
     margin: 0 auto;
 }
@@ -209,24 +209,17 @@ a {
     width: 50%;
 }
 
-#home__line {
-    display: none;
-    width: 5rem;
-    height: .5rem;
-    margin-bottom: 3rem;
-    background-color: var(--primary);
-}
-
 #home__alternative-txt {
     margin-bottom: 1.25rem;
     display: inline-block;
+    color: var(--secondary) 
 }
 
 #home__alternative-txt p {
     font-size: 1rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-transform: uppercase;
-    color: var(--primary);
+    /* color: var(--primary); */
     display: flex;
     align-items: end;
 }
@@ -235,28 +228,21 @@ a {
     display: inline-block;
     width: 5rem;
     height: 2px;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     position: relative;
     top: -4px;
 }
 
 #home__title {
-    font-size: 3.7rem;
-    margin-bottom: 2rem;
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
     color: var(--secondary);
     display: inline-block;
 }
 
-#home__title span {
-    padding: 0 10px;
-    background-color: var(--primary);
-    color: var(--white);
-    border-radius: 3px;
-}
-
 #home__p {
     max-width: 70%;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     color: var(--secondary);
 }
 
@@ -279,18 +265,23 @@ a {
             ABOUT
 ===========================*/
 #about {
-    background-color: var(--primary);
+    /* background-color: #f1f1f1; */
 }
 
 #about .container {
+    background-color: #f4f4f4;
     padding: 40px;
+    border-radius: 30px;
 }
 
 #about__title {
-    /* text-align: center; */
-    font-size: 1.5rem;
-    color: var(--white);
-    margin: 20px 0;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    color: var(--primary);
+    margin: 40px 0;
+    background-color: var(--white);
 }
 
 .section-line {
@@ -301,12 +292,13 @@ a {
     /* left: 50%;
     transform: translateX(-50%); */
     margin-bottom: 40px;
+    display: none;
 }
 
 #about__metrics {
-    width: 100%;
+    width: 1000px;
     margin: 0 auto;
-    margin-top: -6rem;
+    margin-top: -105px;
     padding: 2rem;
     border-radius: 8px;
     background-color: var(--white);
