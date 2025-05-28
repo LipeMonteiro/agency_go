@@ -19,7 +19,7 @@ a {
 
 /* ========= VAR COLORS ========= */
 :root {
-    --primary: #f5770a;
+    --primary: #fa7435;
     --secondary: #323141;
     --white: #fff;
     --gray: #b9b8b8;
@@ -31,16 +31,17 @@ a {
     padding: 0 40px;
     margin: 0 auto;
 }
-
-.btn-primary {
+.btn{
     display: inline-block;
     position: relative;
     bottom: 0;
     padding: 13px 23px;
     transition: .3s;
     border-radius: 5px;
-    color: var(--white);
     font-weight: 500;
+}
+.btn-primary {
+    color: var(--white);
     border: 2px solid var(--primary);
     background-color: var(--primary);
 }
@@ -51,26 +52,30 @@ a {
     bottom: 5px;
 }
 
-.btn-secondary {
-    display: inline-block;
-    position: relative;
-    bottom: 0;
-    padding: 15px 25px;
-    transition: .3s;
-    border-radius: 5px;
+.btn-ghost {
     color: var(--secondary);
-    font-weight: 500;
-    /* border: 2px solid var(--secondary); */
     background-color: var(--white);
     box-shadow: 0 0 20px var(--gray);
+     border: 2px solid var(--white);
 }
 
-.btn-secondary:hover {
+.btn-ghost:hover {
     background: var(--secondary);
     color: var(--white);
+    border-color: var(--secondary);
     bottom: 5px;
 }
 
+.btn-dark {
+    color: var(--white);
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+.btn-dark:hover {
+    background: none;
+    color: var(--secondary);
+    bottom: 5px;
+}
 /* =========================== 
             HEADER 
 ============================== */
@@ -89,26 +94,25 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: .3s ease-in-out;
-    background-color: var(--white);
+    transition: .5s ease-in-out;
 }
-
+/* STICKY EFFECT HEADER */
 #header.sticky {
     top: 20px;
     height: 80px;
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 #header.sticky #header__container {
-    width: 1200px;
+    width: 1120px;
     border-radius: .5rem;
     box-shadow: 0 0 12px var(--gray);
     transition: .3s;
+    background-color: var(--white);
 }
 
 #header__logo {
     font-size: 2rem;
-    font-weight: bold;
     color: var(--secondary)
 }
 
@@ -119,7 +123,6 @@ a {
 #header__menu {
     display: flex;
     gap: 50px;
-
 }
 
 .header__link {
@@ -160,43 +163,6 @@ a {
     border-radius: 0 0 25% 0;
 }
 
-.home__ligh {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(245, 120, 10, 0.699) 0%, rgba(241, 164, 101, 0.171) 70%, transparent 100%);
-    filter: blur(10px);
-    z-index: -1;
-    display: none;
-}
-
-.home__ligh:nth-child(1) {
-    width: 500px;
-    height: 500px;
-    bottom: -20rem;
-    left: -5rem;
-}
-
-.home__ligh:nth-child(2) {
-    width: 200px;
-    height: 200px;
-    top: 7rem;
-    left: 25rem;
-}
-
-.home__ligh:nth-child(3) {
-    width: 300px;
-    height: 300px;
-    top: 5rem;
-    right: 10rem;
-}
-
-.home__ligh:nth-child(4) {
-    width: 150px;
-    height: 150px;
-    bottom: 5rem;
-    left: 35rem;
-}
-
 #home__container {
     width: 100%;
     height: 100%;
@@ -205,21 +171,20 @@ a {
 }
 
 #home__content-txt {
-    margin-top: -4rem;
+    margin-top: -8rem;
     width: 50%;
 }
 
 #home__alternative-txt {
     margin-bottom: 1.25rem;
     display: inline-block;
-    color: var(--secondary) 
+    color: var(--secondary)
 }
 
 #home__alternative-txt p {
     font-size: 1rem;
-    /* font-weight: 500; */
     text-transform: uppercase;
-    /* color: var(--primary); */
+    color: var(--primary);
     display: flex;
     align-items: end;
 }
@@ -227,8 +192,8 @@ a {
 #home__alternative-txt span {
     display: inline-block;
     width: 5rem;
-    height: 2px;
-    background-color: var(--secondary);
+    height: 1px;
+    background-color: var(--primary);
     position: relative;
     top: -4px;
 }
@@ -241,12 +206,12 @@ a {
 }
 
 #home__p {
-    max-width: 70%;
+    max-width: 90%;
     margin-bottom: 4rem;
     color: var(--secondary);
 }
 
-#home__btn-secondary-2 {
+#home__btn-2 {
     margin-left: 1rem;
 }
 
@@ -257,7 +222,7 @@ a {
 }
 
 #home__content-img img {
-    width: 85%;
+    width: 90%;
     position: relative;
 }
 
@@ -265,34 +230,33 @@ a {
             ABOUT
 ===========================*/
 #about {
-    /* background-color: #f1f1f1; */
+    background-color: var(--white);
 }
 
 #about .container {
-    background-color: #f4f4f4;
+    background-color: #f7f7f7;
     padding: 40px;
     border-radius: 30px;
 }
 
 #about__title {
-    display: inline-block;
     padding: 8px 20px;
-    font-size: 1.25rem;
+    font-size: 2rem;
     border-radius: 25px;
-    color: var(--primary);
-    margin: 40px 0;
-    background-color: var(--white);
+    margin: 40px auto;
+    text-align: center;
+    color: var(--secondary);
 }
 
 .section-line {
     width: 6rem;
     height: .25rem;
-    background-color: var(--white);
+    background-color: var(--primary);
     position: relative;
-    /* left: 50%;
-    transform: translateX(-50%); */
     margin-bottom: 40px;
-    display: none;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #about__metrics {
