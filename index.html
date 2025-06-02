@@ -7,13 +7,15 @@
     <title>Agency GO</title>
     <!-- LINK STYLE CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- BOX ICONS -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <!-- ========== HEADER ========== -->
     <header id="header">
         <div id="header__container" class="container">
-            <a href="#home" id="header__logo">Agency <span>go</span></a>
+            <a href="#home" id="header__logo">Agency <span>GO</span></a>
             <nav id="header__menu">
                 <a href="http://" class="header__link">Home</a>
                 <a href="http://" class="header__link">About us</a>
@@ -43,6 +45,7 @@
                 <div id="home__content-img">
                     <img src="img/laptop_1.png">
                 </div>
+                <i class='bx  bx-arrow-in-down-right-circle'></i>
             </div>
         </section>
 
@@ -53,28 +56,28 @@
                 <div id="about__metrics">
                     <ul>
                         <li>
-                            <p class="about__metrics-number">1.285k</p>
+                            <p class="about__metrics-number contador" data-valor="1000">0</p>
                             <p class="about__metrics-desc">satisfied customers</p>
                         </li>
                         <li class="about__metrics-divider"></li>
                         <li>
-                            <p class="about__metrics-number">895</p>
+                            <p class="about__metrics-number contador" data-valor="520">0</p>
                             <p class="about__metrics-desc">Websites developed</p>
                         </li>
                         <li class="about__metrics-divider"></li>
                         <li>
-                            <p class="about__metrics-number">147</p>
+                            <p class="about__metrics-number contador" data-valor="53">0</p>
                             <p class="about__metrics-desc">Apps developed</p>
                         </li>
                         <li class="about__metrics-divider"></li>
                         <li>
-                            <p class="about__metrics-number">53</p>
+                            <p class="about__metrics-number contador" data-valor="230">0</p>
                             <p class="about__metrics-desc">Developed desktop systems</p>
                         </li>
                     </ul>
                 </div>
 
-                <h2 id="about__title">About us</h2>
+                <h2 id="about__title" class="section-title">About us</h2>
                 <div class="section-line"></div>
 
                 <div id="about__internal-container">
@@ -83,11 +86,11 @@
                     </div>
                     <div id="about__content-txt">
                         <p>What we do and are</p>
-                        <h3>Learn more about Agency GO</h3>
+                        <h3>Learn more about <span>Agency</span> <span>GO</span></h3>
                         <p>We are a digital agency passionate about creating incredible experiences on the web. Here,
                             web
                             development and digital marketing work together to make your brand shine online. <br><br>
-                            
+
                             From
                             websites
                             that impress to strategies that convert, we take care of everything with creativity, focus
@@ -96,6 +99,91 @@
                         <a href="http://" class="btn btn-dark">Call to action</a>
                     </div>
                 </div>
+                <div id="about__internal-container-two">
+                    <div id="about__content-txt-two">
+                        <p>Here is a text</p>
+                        <h3>Here is a larger text as a <br>call to action</h3>
+                        <ul>
+                            <li>
+                                <div><i class='bx  bxs-chart-trend'></i></div>
+                                <div>
+                                    <h4>Her is a text</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class='bx  bxs-chart-trend'></i></div>
+                                <div>
+                                    <h4>Her is a text</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class='bx  bxs-chart-trend'></i></div>
+                                <div>
+                                    <h4>Her is a text</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="about__content-img-two">
+                        <img src="img/rocket.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== SERVICES ========== -->
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="section-line"></div>
+
+                <div id="services__cards-container">
+                    <div class="services__card">
+                        <div><img src="./img/icons/web-development.png" alt=""></div>
+                        <h3>Web system development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
+                            eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
+                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
+                    </div>
+                    <div class="services__card">
+                        <div><img src="./img/icons/app-development.png" alt="" srcset=""></div>
+                        <h3>App development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
+                            eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
+                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
+                    </div>
+                    <div class="services__card">
+                        <div><img src="./img/icons/ux-ui.png" alt="" srcset=""></div>
+                        <h3>UX/UI</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
+                            eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
+                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
+                    </div>
+                    <div class="services__card">
+                        <div><img src="./img/icons/seo.png" alt=""></div>
+                        <h3>SEO</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
+                            eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
+                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
+                    </div>
+                    <div class="services__card">
+                        <div><i class='bx  bxs-code-alt'></i></div>
+                        <h3>Service name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
+                            eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
+                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
+                    </div>
+                    <div class="services__card">
+                        <div><i class='bx  bxs-code-alt'></i></div>
+                        <h3>Service name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
+                            eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
+                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
