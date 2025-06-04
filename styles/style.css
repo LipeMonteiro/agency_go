@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* ========= RESET ========== */
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -145,33 +149,39 @@ a {
     gap: 50px;
 }
 
-.header__link {
+.header__menu-link {
     padding: 3px;
     color: var(--secondary);
     position: relative;
     transition: color .3s;
 }
 
-.header__link::after {
+.header__menu-link::after,
+.header__menu-link.active::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: var(--primary);
     position: relative;
     top: 7px;
-    scale: 0;
-    transition: scale .3s;
+    transition: width .3s;
 }
 
-.header__link:hover {
+.header__menu-link:hover {
     color: var(--primary);
 }
 
-.header__link:hover::after {
-    scale: 1;
+.header__menu-link:hover::after {
+    width: 100%;
 }
-
+.header__menu-link.active{
+    color: var(--primary);
+}
+.header__menu-link.active::after{
+    width: 100%;
+    color: var(--primary);
+}
 /* ============================= 
               HOME 
 ================================ */
