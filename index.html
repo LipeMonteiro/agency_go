@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agency GO</title>
     <!-- LINK STYLE CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- BOX ICONS -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -43,7 +43,7 @@
                     <a href="http://" id="home__btn-2" class="btn btn-ghost">Call to action</a>
                 </div>
                 <div id="home__content-img">
-                    <img src="img/laptop_1.png">
+                    <img src="./assets/img/laptop_1.png">
                 </div>
                 <i class='bx  bx-arrow-in-down-right-circle'></i>
             </div>
@@ -52,7 +52,6 @@
         <!-- ========== ABOUT ========== -->
         <section id="about">
             <div class="container">
-
                 <div id="about__metrics">
                     <ul>
                         <li>
@@ -77,21 +76,19 @@
                     </ul>
                 </div>
 
-                <h2 id="about__title" class="section-title">About us</h2>
-                <div class="section-line"></div>
-
                 <div id="about__internal-container">
                     <div id="about__content-img">
-                        <img src="img/office_cartoon.png" alt="">
+                        <img src="./assets/img/office_cartoon.png" alt="">
                     </div>
                     <div id="about__content-txt">
                         <p>What we do and are</p>
                         <h3>Learn more about <span>Agency</span> <span>GO</span></h3>
-                        <p>We are a digital agency passionate about creating incredible experiences on the web. Here,
+                        <div class="section-line"></div>
+                        <p class="about__content-txt-paragraph">We are a digital agency passionate about creating incredible experiences on the web. Here,
                             web
-                            development and digital marketing work together to make your brand shine online. <br><br>
+                            development and digital marketing work together to make your brand shine online.</p>
 
-                            From
+                        <p class="about__content-txt-paragraph">From
                             websites
                             that impress to strategies that convert, we take care of everything with creativity, focus
                             and
@@ -99,28 +96,32 @@
                         <a href="http://" class="btn btn-dark">Call to action</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="container">
                 <div id="about__internal-container-two">
                     <div id="about__content-txt-two">
                         <p>Here is a text</p>
                         <h3>Here is a larger text as a <br>call to action</h3>
+                        <div class="section-line"></div>
                         <ul>
                             <li>
-                                <div><i class='bx  bxs-chart-trend'></i></div>
-                                <div>
+                                <div class="box-icon"><i class='bx  bxs-chart-trend'></i></div>
+                                <div class="box-txt">
                                     <h4>Her is a text</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
                                 </div>
                             </li>
                             <li>
-                                <div><i class='bx  bxs-chart-trend'></i></div>
-                                <div>
+                                <div class="box-icon"><i class='bx  bxs-chart-trend'></i></div>
+                                <div class="box-txt">
                                     <h4>Her is a text</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
                                 </div>
                             </li>
                             <li>
-                                <div><i class='bx  bxs-chart-trend'></i></div>
-                                <div>
+                                <div class="box-icon"><i class='bx  bxs-chart-trend'></i></div>
+                                <div class="box-txt">
                                     <h4>Her is a text</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
                                 </div>
@@ -128,7 +129,7 @@
                         </ul>
                     </div>
                     <div id="about__content-img-two">
-                        <img src="img/rocket.png" alt="">
+                        <img src="./assets/img/rocket.png" alt="">
                     </div>
                 </div>
             </div>
@@ -136,51 +137,46 @@
         <!-- ========== SERVICES ========== -->
         <section id="services">
             <div class="container">
-                <h2 class="section-title">Services</h2>
+                <p class="section-paragraph">Our services</p>
+                <h2 class="section-title">The services that will boost <br>your business</h2>
                 <div class="section-line"></div>
 
                 <div id="services__cards-container">
                     <div class="services__card">
-                        <div><img src="./img/icons/web-development.png" alt=""></div>
-                        <h3>Web system development</h3>
+                        <div><img src="./assets/icons/development.png" alt=""></div>
+                        <h3>Web development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
-                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
                     </div>
                     <div class="services__card">
-                        <div><img src="./img/icons/app-development.png" alt="" srcset=""></div>
+                        <div><img src="./assets/icons/mobile-development.png" alt="" srcset=""></div>
                         <h3>App development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
-                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
                     </div>
                     <div class="services__card">
-                        <div><img src="./img/icons/ux-ui.png" alt="" srcset=""></div>
+                        <div><img src="./assets/icons/ui-ux.png" alt="" srcset=""></div>
                         <h3>UX/UI</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
-                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
                     </div>
                     <div class="services__card">
-                        <div><img src="./img/icons/seo_3d.png" alt=""></div>
+                        <div><img src="./assets/icons/seo.png" alt=""></div>
                         <h3>SEO</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
-                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
                     </div>
                     <div class="services__card">
-                        <div><img src="./img/icons/dgt_mkt.png" alt=""></div>
+                        <div><img src="./assets/icons/marketing-digital.png" alt=""></div>
                         <h3>Digital marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
-                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
                     </div>
                     <div class="services__card">
-                        <div><img src="img/icons/dzn_graphic.png" alt=""></div>
+                        <div><img src="./assets/icons/graphic-design.png" alt=""></div>
                         <h3>Graphic design</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
-                        <a href="http://">Learn more<i class='bx  bxs-arrow-out-up-right-square'></i> </a>
                     </div>
                 </div>
 
@@ -189,6 +185,6 @@
     </main>
 </body>
 
-<script src="script.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </html>
