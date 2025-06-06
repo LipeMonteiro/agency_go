@@ -9,27 +9,29 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- BOX ICONS -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-    <!-- ========== HEADER ========== -->
-    <header id="header">
+
+    <header id="header"><!-- ========== HEADER ========== -->
         <div id="header__container" class="container">
             <a href="#home" id="header__logo">Agency <span>GO</span></a>
             <nav id="header__menu">
                 <a href="#home" class="header__menu-link active">Home</a>
                 <a href="#about" class="header__menu-link">About us</a>
                 <a href="#services" class="header__menu-link">Services</a>
-                <a href="#work" class="header__menu-link">Work</a>
+                <a href="#works" class="header__menu-link">Works</a>
                 <a href="#contact" class="header__menu-link">Contact</a>
             </nav>
             <a href="http://" class="header__btn btn btn-primary">Started</a>
         </div>
     </header>
-    <!-- ========== MAIN ======= -->
-    <main>
-        <!-- ========== HOME ========= -->
-        <section id="home">
+
+    <main><!-- ========== MAIN ======= -->
+
+        <section id="home"> <!-- ========== HOME ========= -->
             <div id="home__container" class="container">
                 <div id="home__content-txt">
                     <span id="home__line"></span>
@@ -45,12 +47,10 @@
                 <div id="home__content-img">
                     <img src="./assets/img/laptop_1.png">
                 </div>
-                <i class='bx  bx-arrow-in-down-right-circle'></i>
+                <i class="fa-solid fa-angles-down"></i>
             </div>
         </section>
-
-        <!-- ========== ABOUT ========== -->
-        <section id="about">
+        <section id="about"><!-- ========== ABOUT ========== -->
             <div class="container">
                 <div id="about__metrics">
                     <ul>
@@ -81,10 +81,11 @@
                         <img src="./assets/img/office_cartoon.png" alt="">
                     </div>
                     <div id="about__content-txt">
-                        <p>What we do and are</p>
-                        <h3>Learn more about <span>Agency</span> <span>GO</span></h3>
+                        <p class="section-paragraph">What we do and are</p>
+                        <h2 class="section-title">Learn more about <br><span>Agency</span> <span>GO</span>.</h2>
                         <div class="section-line"></div>
-                        <p class="about__content-txt-paragraph">We are a digital agency passionate about creating incredible experiences on the web. Here,
+                        <p class="about__content-txt-paragraph">We are a digital agency passionate about creating
+                            incredible experiences on the web. Here,
                             web
                             development and digital marketing work together to make your brand shine online.</p>
 
@@ -101,8 +102,8 @@
             <div class="container">
                 <div id="about__internal-container-two">
                     <div id="about__content-txt-two">
-                        <p>Here is a text</p>
-                        <h3>Here is a larger text as a <br>call to action</h3>
+                        <p class="section-paragraph">Here is a text</p>
+                        <h2 class="section-title">Here is a larger text as a call to action.</h2>
                         <div class="section-line"></div>
                         <ul>
                             <li>
@@ -134,11 +135,10 @@
                 </div>
             </div>
         </section>
-        <!-- ========== SERVICES ========== -->
-        <section id="services">
+        <section id="services"> <!-- ========== SERVICES ========== -->
             <div class="container">
                 <p class="section-paragraph">Our services</p>
-                <h2 class="section-title">The services that will boost <br>your business</h2>
+                <h2 class="section-title">The services that will boost <br>your business.</h2>
                 <div class="section-line"></div>
 
                 <div id="services__cards-container">
@@ -180,6 +180,50 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+        <section id="works">
+            <div class="container">
+                <p class="section-paragraph">Our works</p>
+                <h2 class="section-title">Solutions we have already delivered.</h2>
+                <div class="section-line"></div>
+
+                <article>
+                    <img src="./assets/img/project.jpg" alt="" srcset="">
+                    <div>
+                        <h3>Naped</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
+                            suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
+                            <a href="#" class="btn btn-primary">View project</a>
+                    </div>
+                </article>
+                <article class="reverse">
+                    <img src="./assets/img/project.jpg" alt="" srcset="">
+                    <div>
+                        <h3>Naped</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
+                            suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
+                            <a href="#" class="btn btn-primary">View project</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/img/project.jpg" alt="" srcset="">
+                    <div>
+                        <h3>Naped</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
+                            suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
+                            <a href="#" class="btn btn-primary">View project</a>
+                    </div>
+                </article>
+                <article class="reverse">
+                    <img src="./assets/img/project.jpg" alt="" srcset="">
+                    <div>
+                        <h3>Naped</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
+                            suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
+                            <a href="#" class="btn btn-primary">View project</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>

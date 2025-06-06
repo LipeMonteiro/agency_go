@@ -52,7 +52,7 @@ a {
     display: inline-block;
     position: relative;
     bottom: 0;
-    padding: 13px 23px;
+    padding: 13px 40px;
     transition: .3s;
     border-radius: 5px;
     font-weight: 500;
@@ -102,7 +102,7 @@ a {
     text-align: center;
 }
 .section-title{
-    font-size: 2rem;
+    font-size: 2.7rem;
     border-radius: 25px;
     margin: 0px 0 10px 0;
     text-align: left;
@@ -248,6 +248,7 @@ a {
 }
 
 #home__p {
+    font-size: 18px;
     max-width: 90%;
     margin-bottom: 4rem;
     color: var(--secondary);
@@ -274,7 +275,6 @@ a {
     bottom: 6rem;
     left: 50%;
     transform: translateX(-50%);
-    rotate: 45deg;
     color: var(--gray);
     animation: float 1s ease-in-out infinite;
 }
@@ -283,6 +283,7 @@ a {
 ===========================*/
 #about {
     background-color: var(--white);
+    margin-bottom: 80px;
 }
 
 #about .container:nth-child(1) {
@@ -341,21 +342,13 @@ a {
     border-radius: 25px;
     width: 50%;
 }
-#about__content-txt p:nth-child(1){
-    margin-bottom: 1rem;
-    color: var(--primary);
+#about__content-txt h2 span{
+    font-weight: 400;
 }
 .about__content-txt-paragraph{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--secondary);
-}
-.about__content-txt-paragraph:nth-of-type(3){
-    margin-bottom: 40px;
-}
-#about__content-txt h3{
-    font-size: 2rem;
-    color: var(--secondary);
-    margin-bottom: 1rem;
+    font-size: 18px;
 }
 #about__content-txt h3 span{
     font-weight: 400;
@@ -364,12 +357,8 @@ a {
     color: var(--primary)
 }
 
-
-
-
-
 #about .container:nth-child(2){
-    margin: 80px auto;
+    margin: 100px auto 0 auto;
 }
 #about__internal-container-two{
     display: flex;
@@ -378,15 +367,6 @@ a {
 }
 #about__content-txt-two{
     width: 50%;
-}
-#about__content-txt-two p:nth-child(1){
-    margin-bottom: 1rem;
-    color: var(--primary);
-}
-#about__content-txt-two h3{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--secondary);
 }
 #about__content-txt-two ul{
     width: 100%;
@@ -438,10 +418,22 @@ a {
 /* ================================
             SERVICES 
 ===================================*/
+#services{
+    margin-bottom: 80px;
+}
 #services .container{
     border-radius: 30px;
     background-color: #f7f7f7;
 }
+
+#services .container .section-paragraph{text-align: center;}
+#services .container .section-title{text-align: center;}
+
+#services .container .section-line{
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
 #services__cards-container{
     width: 100%;
     display: flex;
@@ -464,11 +456,9 @@ a {
 .services__card:hover{
     box-shadow: 2px 6px 10px #d4d4d4;
     border-color: var(--primary);
+    scale: .9;
 }
-.services__card:hover::after{
-    width: 100%;
-    height: 100%;
-}
+
 .services__card div{
     height: 70px;
     margin-bottom: 2rem;
@@ -493,4 +483,42 @@ a {
     color: var(--gray);
     font-weight: 500;
     transition: color .3s ease-in-out;
+}
+
+/* ========== WORKS =========== */
+#works article{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+#works article.reverse div{
+    order: 1;
+}
+#works article.reverse img{
+    order: 2;
+}
+#works article:nth-of-type(4){
+    margin-bottom: 0;
+}
+#works article:nth-of-type(1){
+    margin-top: 5rem;
+}
+#works article img{
+    border-radius: 25px;
+    transition: scale .5s ease-in-out;
+}
+#works article img:hover{
+    scale: .9;
+}
+#works article h3{
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+#works article p{
+    font-size: 18px;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
 }

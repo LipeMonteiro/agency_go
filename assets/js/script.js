@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
 
   sections.forEach(element => {
     let top = window.scrollY
-    let offset = element.offsetTop - 350
+    let offset = element.offsetTop
     let height = element.offsetHeight
     const id = element.getAttribute('id')
 
