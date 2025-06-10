@@ -23,6 +23,9 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1.125rem;
+}
 /* ========== ANIMATIONS ========== */
 
 @keyframes float {
@@ -48,83 +51,35 @@ a {
 }
 
 /* ========= MODIFIING CLASSES ======== */
-.container {
+.section--wrapper {
     max-width: 1200px;
     padding: 40px;
     margin: 0 auto;
 }
 
-.btn {
-    font-size: 1rem;
-    display: inline-block;
-    position: relative;
-    bottom: 0;
-    padding: 13px 40px;
-    transition: .3s;
-    border-radius: 5px;
+.content--flex{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-.btn-primary {
-    color: var(--white);
-    border: 2px solid var(--primary);
-    background-color: var(--primary);
-}
+.content-flex--txt,
+.content-flex--img{width: 50%;}
 
-.btn-primary:hover {
-    background: none;
-    color: var(--primary);
-    bottom: 5px;
-}
+.content-flex--img img{width: 90%;}
 
-.btn-ghost {
-    color: var(--secondary);
-    background-color: var(--white);
-    box-shadow: 5px 5px 10px var(--gray);
-    border: 2px solid var(--white);
-}
-
-.btn-ghost:hover {
-    background: var(--secondary);
-    color: var(--white);
-    border-color: var(--secondary);
-    bottom: 5px;
-}
-
-.btn-dark-none {
-    color: var(--secondary);
-    background: none;
-    border: 2px solid var(--secondary);
-}
-
-.btn-dark-none:hover {
-    background-color: var(--secondary);
-    color: var(--white);
-    bottom: 5px;
-}
-.btn-dark {
-    background-color: var(--secondary);
-    color: var(--white);
-    border: 2px solid var(--secondary);
-}
-
-.btn-dark:hover {
-    background: none;
-    color: var(--secondary);
-    bottom: 5px;
-}
-
-.headline{
+.section--headline{
     text-align: center;
     margin-bottom: 40px;
 }
 
-.headline p {
+.section--headline p {
     font-size: 1.125rem;
     color: var(--primary);
     margin-bottom: .5rem;
 }
 
-.headline h2 {
+.section--headline h2 {
     display: inline-block;
     font-size: 2.2rem;
     border-radius: 25px;
@@ -134,7 +89,7 @@ a {
     line-height: 1;
 }
 
-.headline div {
+.section--headline div {
     width: 6rem;
     height: .25rem;
     background-color: var(--primary);
@@ -144,20 +99,65 @@ a {
     transform: translateX(-50%);
 }
 
-.content-flex{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.btn {
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    padding: 10px 30px;
+    transition: .3s;
+    border-radius: 40px;
 }
 
-.content-flex .content-txt,
-.content-flex .content-img{
-    width: 50%;
+.btn--primary {
+    color: var(--white);
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
 }
 
-.content-flex .content-img img{
-    width: 100%;
+.btn--primary:hover {
+    background: none;
+    color: var(--primary);
+    bottom: 5px;
 }
+
+.btn--ghost {
+    color: var(--secondary);
+    background-color: var(--white);
+    box-shadow: 5px 5px 10px var(--gray);
+    border: 2px solid var(--white);
+}
+
+.btn--ghost:hover {
+    background: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+    bottom: 5px;
+}
+
+.btn--dark-none {
+    color: var(--secondary);
+    background: none;
+    border: 2px solid var(--secondary);
+}
+
+.btn--dark-none:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    bottom: 5px;
+}
+.btn--dark {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 2px solid var(--secondary);
+}
+
+.btn--dark:hover {
+    background: none;
+    color: var(--secondary);
+    bottom: 5px;
+}
+
 /* =========================== 
             HEADER 
 ============================== */
@@ -170,7 +170,7 @@ header {
     transition: .3s ease-in-out;
 }
 
-header .container {
+.header__wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -186,7 +186,7 @@ header.sticky {
     transition: .5s ease-in-out;
 }
 
-header.sticky .container {
+header.sticky .section--wrapper {
     width: 1120px;
     border-radius: .5rem;
     box-shadow: 0 0 12px var(--gray);
@@ -194,29 +194,29 @@ header.sticky .container {
     background-color: var(--white);
 }
 
-header #logo {
+.header__logo {
     font-size: 2rem;
     color: var(--secondary)
 }
 
-header #logo span {
+.header__logo span {
     color: var(--primary)
 }
 
-header .container nav {
+.header__nav {
     display: flex;
     gap: 50px;
 }
 
-header .container nav a {
+.header__nav-link {
     padding: 3px;
     color: var(--secondary);
     position: relative;
     transition: color .3s;
 }
 
-header .container nav a::after,
-header .container nav a.active::after {
+.header__nav-link::after,
+.header__nav-link.active::after {
     content: '';
     display: block;
     width: 0;
@@ -227,13 +227,13 @@ header .container nav a.active::after {
     transition: width .3s;
 }
 
-header .container nav a.active,
-header .container nav a:hover {
+.header__nav-link.active,
+.header__nav-link:hover {
     color: var(--primary);
 }
 
-header .container nav a.active::after,
-header .container nav a:hover::after {
+.header__nav-link.active::after,
+.header__nav-link:hover::after {
     width: 100%;
 }
 
@@ -243,12 +243,11 @@ header .container nav a:hover::after {
 #home {
     width: 100%;
     height: 100vh;
-    margin-bottom: 65px;
     position: relative;
     border-radius: 0 0 25% 0;
 }
 
-#home .container {
+.home__wrapper {
     width: 100%;
     height: 100%;
     position: relative;
@@ -257,15 +256,14 @@ header .container nav a:hover::after {
     padding-top: 100px;
 }
 
-#home .content-flex .content-txt p:first-child {
-    font-size: 1.125rem;
-    margin-bottom: 1rem;
+ .home__content-txt-alt{
+    margin-bottom: .5rem;
     color: var(--secondary);
     display: flex;
     align-items: end;
 }
 
-#home .content-flex .content-txt span {
+.home__content-txt-alt span {
     display: inline-block;
     width: 5rem;
     height: 1px;
@@ -274,30 +272,28 @@ header .container nav a:hover::after {
     top: -4px;
 }
 
-#home .content-flex .content-txt h1 {
+.home__content-txt h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     line-height: 1;
     color: var(--secondary);
 }
 
-#home .content-flex .content-txt p {
-    font-size: 16px;
+.home__content-txt-p {
     max-width: 90%;
     margin-bottom: 3rem;
     color: var(--secondary);
 }
 
-#home .content-flex .content-txt .btn:last-child {
+.home__content-txt .btn:last-child {
     margin-left: 1rem;
 }
 
-#home .content-flex .content-img img{
-    width: 100%;
+.home__content-img img{
     transform: scaleX(-1);
 }
 
-#home .container #arrow {
+.home__content-arrow {
     width: 30px;
     position: absolute;
     bottom: 2rem;
@@ -312,77 +308,79 @@ header .container nav a:hover::after {
 ===========================*/
 #about {
     background-color: var(--white);
+    padding-top: 100px;
 }
 
-#about #container-one {
+.about__container-one {
     background-color: #f7f7f7;
     padding: 40px;
     border-radius: 30px;
 }
 
-#about__metrics {
+.about__metrics {
     width: 1000px;
     margin: -105px auto 40px auto;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--white);
     box-shadow: 0 0px 20px #cccccc;
 }
 
-#about__metrics ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-#about__metrics ul .divider {
+.about__metrics-divider {
     display: block;
     width: 2px;
     height: 66px;
     background-color: #e9e9e9;
 }
 
-#about__metrics ul li {
+.about__metrics-item {
     text-align: center;
 }
 
-#about__metrics ul li .counter {
-    font-size: 2.5rem;
-    font-weight: 500;
+.about__metrics-counter {
+    font-size: 2rem;
+    font-weight: 600;
     color: var(--secondary);
 }
 
-#about__metrics ul li .description {
+.about__metrics-desc {
     color: var(--gray);
+    font-size: 1rem;
 }
 
-#about #container-one #content-txt div p{
-    color: var(--primary);
-}
-#about #container-one #content-txt div h2 span {
+.about__content-one-txt .section--headline span {
     font-weight: 400;
 }
+.about__content-one-txt .section--headline span:last-child {
+    color: var(--primary);
+}
 
-#about #container-one .content-txt .content-txt-paragraph {
+.about__content-one-p {
     margin-bottom: 1.5rem;
     color: var(--secondary);
-    font-size: 16px;
 }
-#about #container-one .content-txt .headline{
+.about__content-one-p:nth-of-type(2) {
+    margin-bottom: 3rem;
+}
+.about__content-one-txt .section--headline{
     text-align: left;
 }
-#about #container-one .content-txt .headline div{
+.about__content-one-txt .section--headline div{
     left: 0;
     transform: translate(0);
 }
-#about #container-two{
+
+.about__container-two{
     padding: 100px 40px;
 }
 
-#about #container-two .content-txt ul {
+.about__differentials {
     width: 100%;
 }
 
-#about #container-two .content-txt ul li {
+.about__differentials-item {
     width: 100%;
     display: flex;
     align-items: center;
@@ -394,16 +392,16 @@ header .container nav a:hover::after {
     box-shadow: 5px 5px 10px #e4e4e4;
 }
 
-#about #container-two .content-txt ul li:last-child {
+.about__differentials-item:last-child {
     margin-bottom: 0;
 }
 
-#about__content-txt-two ul li .box-icon {
+.about__differentials-icon {
     width: 70px;
     height: 70px;
 }
 
-#about__content-txt-two ul li div i {
+.about__differentials-icon i {
     font-size: 3rem;
     color: var(--primary);
     position: relative;
@@ -412,29 +410,30 @@ header .container nav a:hover::after {
     transform: translate(-50%, -50%);
 }
 
-#about__content-txt-two ul li .box-txt {
+.about__differentials-txt {
     width: calc(100% - 70px);
 }
 
-#about__content-txt-two ul li div h4 {
+.about__differentials-txt h4 {
     font-size: 1.25rem;
     margin-bottom: .5rem;
     color: var(--secondary);
 }
 
-#about__content-txt-two ul li div p {
+.about__differentials-txt p {
+    font-size: 1rem;
     color: var(--gray);
 }
 
 /* ================================
             SERVICES 
 ===================================*/
-#services .container {
+.services__container {
     border-radius: 30px;
     background-color: #f7f7f7;
 }
 
-#services__cards-container {
+.services__cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -478,6 +477,7 @@ header .container nav a:hover::after {
 }
 
 .services__card p {
+    font-size: 1rem;
     color: var(--gray);
 }
 
@@ -492,15 +492,16 @@ header .container nav a:hover::after {
 }
 
 /* ========== WORKS =========== */
-#works .container{padding: 100px 40px}
-#works article {
+.works__container{padding: 100px 40px}
+
+.works__item {
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 40px;
     margin-bottom: 4rem;
     border-radius: 25px;
-    box-shadow: 0 0 30px #dadada;
+    /* box-shadow: 0 0 30px #dadada; */
 }
 
 #works article.reverse div {
@@ -522,6 +523,7 @@ header .container nav a:hover::after {
 #works article img {
     border-radius: 25px;
     transition: scale .5s ease-in-out;
+    width: 450px
 }
 
 #works article img:hover {

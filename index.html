@@ -16,174 +16,184 @@
 <body>
 
     <header><!-- ========== HEADER ========== -->
-        <div class="container">
-            <a href="#home" id="logo">Agency <span>GO</span></a>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About us</a>
-                <a href="#services">Services</a>
-                <a href="#works">Works</a>
-                <a href="#contact">Contact</a>
+        <div class="header__wrapper section--wrapper">
+            <a href="#home" class="header__logo">Agency <span>GO</span></a>
+            <nav class="header__nav">
+                <a href="#home" class="header__nav-link">Home</a>
+                <a href="#about" class="header__nav-link">About us</a>
+                <a href="#services" class="header__nav-link">Services</a>
+                <a href="#works" class="header__nav-link">Works</a>
+                <a href="#contact" class="header__nav-link">Contact</a>
             </nav>
-            <a href="http://" class="btn btn-primary">Started</a>
+            <a href="http://" class="btn btn--primary">Started</a>
         </div>
     </header>
 
     <main><!-- ========== MAIN ======= -->
 
         <section id="home"> <!-- ========== HOME ========= -->
-            <div class="container">
-                <div class="content-flex">
-                    <div class="content-txt">
-                        <p>Your digital agency <span></span></p>
+            <div class="home__wrapper section--wrapper">
+                <div class="content--flex">
+                    <div class="home__content-txt content-flex--txt">
+                        <p class="home__content-txt-alt">Your digital agency <span></span></p>
                         <h1>Strategies to boost your business.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta perspiciatis ipsam
+                        <p class="home__content-txt-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta perspiciatis ipsam
                             ipsum cumfugit molestiae distinctio aperiam ducimus consequuntur magni!</p>
-                        <a href="http://" class="btn btn-primary">Boost your business now</a>
-                        <a href="http://" class="btn btn-dark-none">Call to action</a>
+                        <a href="http://" class="btn btn--primary">Boost your business now</a>
+                        <a href="http://" class="btn btn--dark-none">Call to action</a>
                     </div>
-                    <div class="content-img">
+                    <div class="home__content-img content-flex--img">
                         <img src="./assets/img/laptop_1.png">
                     </div>
+                    <img class="home__content-arrow" src="./assets/icons/arrow.png" alt="" srcset="">
                 </div>
-                <img id="arrow" src="./assets/icons/arrow.png" alt="" srcset="">
             </div>
         </section>
         <section id="about"><!-- ========== ABOUT ========== -->
-            <div id="container-one" class="container">
-                <div id="about__metrics">
-                    <ul>
-                        <li>
-                            <span class="counter" data-valor="1000">0</span>
-                            <p class="description">satisfied customers</p>
-                        </li>
-                        <div class="divider"></div>
-                        <li>
-                            <span class="counter" data-valor="520">0</span>
-                            <p class="description">Websites developed</p>
-                        </li>
-                        <div class="divider"></div>
-                        <li>
-                            <span class="counter" data-valor="53">0</span>
-                            <p class="description">Apps developed</p>
-                        </li>
-                        <div class="divider"></div>
-                        <li>
-                            <span class="counter" data-valor="230">0</span>
-                            <p class="description">Developed desktop systems</p>
-                        </li>
-                    </ul>
-                </div>
+            <div class="about__container-one section--wrapper">
 
-                <div class="content-flex">
-                    <div class="content-img">
+                <ul class="about__metrics">
+                    <li class="about__metrics-item">
+                        <span class="about__metrics-counter counter" data-valor="1000">0</span>
+                        <p class="about__metrics-desc">satisfied customers</p>
+                    </li>
+                    <div class="about__metrics-divider"></div>
+                    <li class="about__metrics-item">
+                        <span class="about__metrics-counter counter" data-valor="520">0</span>
+                        <p class="about__metrics-desc">Websites developed</p>
+                    </li>
+                    <div class="about__metrics-divider"></div>
+                    <li class="about__metrics-item">
+                        <span class="about__metrics-counter counter" data-valor="53">0</span>
+                        <p class="about__metrics-desc">Apps developed</p>
+                    </li>
+                    <div class="about__metrics-divider"></div>
+                    <li class="about__metrics-item">
+                        <span class="about__metrics-counter counter" data-valor="230">0</span>
+                        <p class="about__metrics-desc">Developed desktop systems</p>
+                    </li>
+                </ul>
+
+                <div class="about__content-one content--flex">
+                    <div class="content-flex--img">
                         <img src="./assets/img/office_cartoon.png" alt="">
                     </div>
-                    <div class="content-txt">
-                        <div class="headline">
-                            <p class="section-paragraph">What we do and are</p>
-                            <h2 class="section-title">Learn more about <span>Agency</span> <span>GO</span>.</h2>
-                            <div class="section-line"></div>
+                    <div class="about__content-one-txt content-flex--txt">
+                        <div class="section--headline">
+                            <p>What we do and are</p>
+                            <h2>Learn more about <span>Agency</span> <span>GO</span>.</h2>
+                            <div></div>
                         </div>
-                        <div>
-                            <p class="content-txt-paragraph">We are a digital agency passionate about creating
-                                incredible experiences on the web. Here,
-                                web
-                                development and digital marketing work together to make your brand shine online.</p>
 
-                            <p class="content-txt-paragraph">From
-                                websites
-                                that impress to strategies that convert, we take care of everything with creativity,
-                                focus
-                                and
-                                that special touch that makes the difference. Let's build something incredible together?
-                            </p>
-                            <a href="http://" class="btn btn-primary">Call to action</a>
-                        </div>
+                        <p class="about__content-one-p">We are a digital agency passionate about creating
+                            incredible experiences on the web. Here,
+                            web
+                            development and digital marketing work together to make your brand shine online.</p>
+
+                        <p class="about__content-one-p">From
+                            websites
+                            that impress to strategies that convert, we take care of everything with creativity,
+                            focus
+                            and
+                            that special touch that makes the difference. Let's build something incredible together?
+                        </p>
+                        <a href="http://" class="btn btn--primary">Call to action</a>
                     </div>
                 </div>
             </div>
 
-            <div id="container-two" class="container">
-                <div class="headline">
-                    <p class="section-paragraph">Here is a text</p>
-                    <h2 class="section-title">Here is a larger text as a call to action.</h2>
-                    <div class="section-line"></div>
+            <div class="about__container-two section--wrapper">
+                <div class="section--headline">
+                    <p>Here is a text</p>
+                    <h2>Here is a larger text as a call to action.</h2>
+                    <div></div>
                 </div>
-                <div class="content-flex">
-                    <div class="content-txt">
+                <div class="about__content-two content--flex">
+                    <div class="about__content-two-txt content-flex--txt">
 
-                        <ul>
-                            <li>
-                                <div class="box-icon"><i class='bx  bxs-chart-trend'></i></div>
-                                <div class="box-txt">
+                        <ul class="about__differentials">
+                            <li class="about__differentials-item">
+                                <div class="about__differentials-icon"><i class='bx  bxs-chart-trend'></i></div>
+                                <div class="about__differentials-txt">
                                     <h4>Her is a text</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
                                 </div>
                             </li>
-                            <li>
-                                <div class="box-icon"><i class='bx  bxs-chart-trend'></i></div>
-                                <div class="box-txt">
+                            <li class="about__differentials-item">
+                                <div class="about__differentials-icon"><i class='bx  bxs-chart-trend'></i></div>
+                                <div class="about__differentials-txt">
                                     <h4>Her is a text</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
                                 </div>
                             </li>
-                            <li>
-                                <div class="box-icon"><i class='bx  bxs-chart-trend'></i></div>
-                                <div class="box-txt">
+                            <li class="about__differentials-item">
+                                <div class="about__differentials-icon"><i class='bx  bxs-chart-trend'></i></div>
+                                <div class="about__differentials-txt">
                                     <h4>Her is a text</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore?</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="content-img">
+                    <div class="about__content-two-img content-flex--img">
                         <img src="./assets/img/rocket.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <section id="services"> <!-- ========== SERVICES ========== -->
-            <div class="container">
-                <div class="headline">
-                    <p class="section-paragraph">Our services</p>
-                    <h2 class="section-title">The services that will boost your business.</h2>
-                    <div class="section-line"></div>
+            <div class="services__container section--wrapper">
+                <div class="section--headline">
+                    <p>Our services</p>
+                    <h2>The services that will boost your business.</h2>
+                    <div></div>
                 </div>
 
-                <div id="services__cards-container">
+                <div class="services__cards">
                     <div class="services__card">
-                        <div><img src="./assets/icons/development.png" alt=""></div>
+                        <div class="services__card-box-img">
+                            <img src="./assets/icons/development.png" alt="">
+                        </div>
                         <h3>Web development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
                     </div>
                     <div class="services__card">
-                        <div><img src="./assets/icons/mobile-development.png" alt="" srcset=""></div>
+                        <div class="services__card-box-img">
+                            <img src="./assets/icons/mobile-development.png" alt="" srcset="">
+                        </div>
                         <h3>App development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
                     </div>
                     <div class="services__card">
-                        <div><img src="./assets/icons/ui-ux.png" alt="" srcset=""></div>
+                        <div class="services__card-box-img">
+                            <img src="./assets/icons/ui-ux.png" alt="" srcset="">
+                        </div>
                         <h3>UX/UI</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
                     </div>
                     <div class="services__card">
-                        <div><img src="./assets/icons/seo.png" alt=""></div>
+                        <div class="services__card-box-img">
+                            <img src="./assets/icons/seo.png" alt="">
+                        </div>
                         <h3>SEO</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
                     </div>
                     <div class="services__card">
-                        <div><img src="./assets/icons/marketing-digital.png" alt=""></div>
+                        <div class="services__card-box-img">
+                            <img src="./assets/icons/marketing-digital.png" alt="">
+                        </div>
                         <h3>Digital marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
                     </div>
                     <div class="services__card">
-                        <div><img src="./assets/icons/graphic-design.png" alt=""></div>
+                        <div class="services__card-box-img">
+                            <img src="./assets/icons/graphic-design.png" alt="">
+                        </div>
                         <h3>Graphic design</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum praesentium,
                             eligendi harum numquam totam adipisci quos voluptatum reprehenderit delectus?</p>
@@ -193,47 +203,47 @@
             </div>
         </section>
         <section id="works"> <!-- ========== WORKS =========== -->
-            <div class="container">
-                <div class="headline">
-                    <p class="section-paragraph">Our works</p>
-                    <h2 class="section-title">Solutions we have already delivered.</h2>
-                    <div class="section-line"></div>
+            <div class="works__container section--wrapper">
+                <div class="section--headline">
+                    <p>Our works</p>
+                    <h2>Solutions we have already delivered.</h2>
+                    <div></div>
                 </div>
 
-                <article>
+                <article class="works__item">
                     <img src="./assets/img/project.jpg" alt="" srcset="">
                     <div>
                         <h3>Naped</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
                             suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
-                        <a href="#" class="btn btn-dark">View project</a>
+                        <a href="#" class="btn btn--dark">View project</a>
                     </div>
                 </article>
-                <article class="reverse">
+                <article class="works__item reverse">
                     <img src="./assets/img/project.jpg" alt="" srcset="">
                     <div>
                         <h3>Naped</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
                             suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
-                        <a href="#" class="btn btn-dark">View project</a>
+                        <a href="#" class="btn btn--dark">View project</a>
                     </div>
                 </article>
-                <article>
+                <article class="works__item">
                     <img src="./assets/img/project.jpg" alt="" srcset="">
                     <div>
                         <h3>Naped</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
                             suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
-                        <a href="#" class="btn btn-dark">View project</a>
+                        <a href="#" class="btn btn--dark">View project</a>
                     </div>
                 </article>
-                <article class="reverse">
+                <article class="works__item reverse">
                     <img src="./assets/img/project.jpg" alt="" srcset="">
                     <div>
                         <h3>Naped</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A unde, tempore ut, maiores ducimus
                             suscipit, ipsum placeat accusamus excepturi eveniet impedit cupiditate nihil nulla enim.</p>
-                        <a href="#" class="btn btn-dark">View project</a>
+                        <a href="#" class="btn btn--dark">View project</a>
                     </div>
                 </article>
             </div>
